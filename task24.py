@@ -21,7 +21,7 @@ if sum_1 > sum_max:
     sum_max = sum_1
 for k,i in bb_patch.items():
     print(k,i)
-    if (k > 1) & (k < n) in bb_patch.keys():    # долго не мог понять, в чём тут ошибка! оказалось нужны отдельные скобки для каждого условия!
+    if k > 1 and k < n in bb_patch.keys():
         sum = bb_patch[k-1] + bb_patch[k] + bb_patch[k+1]
         if sum > sum_max:
             sum_max = sum
